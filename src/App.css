@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* 共通CSS */
+html,button,div,span,table,h1,h2,h3,ul,li{
+  margin: 0;
+  padding:0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#wrap_contents {
+    border: 1px solid #dddddd;
+    width: 520px;
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#right-content{
+  width: 250px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+}
+#left-content{
+  width: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+/* 左側CSS */
+.wrap_btn{
+  width: 140px;
+  margin: 15px;
+  position: relative;
 }
+.btn{
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  padding:3px 10px;
+  border:2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1),
+              0 -5px 5px rgba(0, 0, 0, 0.1),
+              5px 0 5px rgba(0, 0, 0, 0.1),
+              -5px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.btn span{
+  font-weight: bold;
+}
+.counter {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    font-size: 14px;
+    background-color: #ff0000;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+/* 右側CSS */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrap_data{
+  width: 100%;
+  height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1),
+              0 -5px 5px rgba(0, 0, 0, 0.1),
+              5px 0 5px rgba(0, 0, 0, 0.1),
+              -5px 0 5px rgba(0, 0, 0, 0.1);
+}
+.wrap_data h3{
+  border-bottom: 2px solid #dddddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
